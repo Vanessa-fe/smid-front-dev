@@ -3,7 +3,8 @@ import { Suspense } from "react";
 import Loading from "./loading";
 
 async function getPosts() {
-  const query = `
+  const query =
+      `
   {
     posts(first: 5) {
       nodes {
@@ -13,7 +14,8 @@ async function getPosts() {
       }
     }
   }
-  `;
+  `
+  ;
 
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(

@@ -14,8 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
+      {children}
+      <header>
         <Navbar />
-        {children}
+      </header>
+
 
         <footer
           style={{ textAlign: "center", marginTop: "20px", fontSize: "14px" }}
