@@ -2,6 +2,7 @@ import "./globals.css";
 import { Rubik } from "next/font/google";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -20,10 +21,8 @@ export default function RootLayout({ children }) {
       </header>
 
 
-        <footer
-          style={{ textAlign: "center", marginTop: "20px", fontSize: "14px" }}
-        >
-          © 2023 Fran Agulto Dev Stoke
+        <footer>
+       <Footer />
         </footer>
       </body>
     </html>

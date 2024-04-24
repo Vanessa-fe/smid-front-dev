@@ -32,7 +32,7 @@ nav {
 }
 
 .lien-mobile {
-    @apply p-2 block;
+    @apply p-2 grid;
 }
 
 /* card styles */
@@ -54,3 +54,102 @@ nav {
     @apply my-4 text-sm leading-6;
 }
 
+/* FOOTER */
+
+.footerLogo img{
+    @apply justify-self-center ;
+}
+
+.footerLogo a{
+    @apply md:justify-center ;
+}
+
+.menuLangue {
+    @apply grid;
+}
+
+.menuLangue button {
+    @apply m-4 bg-primary text-white justify-self-center rounded-3xl p-2;
+}
+
+.partie2 {
+    @apply md:grid md:grid-cols-3;
+}
+
+.partie2 p2c1 {
+@apply md:h-full md:justify-center md:grid md:grid-rows-3 md:grid-cols-1;
+}
+
+.bouttonPhoto {
+    @apply grid;
+}
+
+.bouttonPhoto button {
+    @apply cursor-pointer m-4 bg-primary text-white
+    justify-self-center rounded-3xl p-2 md:col-span-2;
+}
+
+.reseauSociaux {
+    @apply text-white grid justify-center
+    md:row-span-2 md:col-span-2;
+}
+
+.logoReseaux {
+    @apply grid grid-cols-4 m-4 justify-items-center
+    md:m-0;
+}
+
+.ellipse {
+    @apply bg-white h-12 w-12 rounded-3xl flex items-center justify-center ;
+}
+
+.SiteMapList {
+    @apply flex justify-center
+    text-white ;
+}
+
+.SiteMapList li {
+   @apply m-4 text-center;
+}
+
+.applis {
+    @apply p-4 justify-center text-center text-white;
+}
+
+
+.logoStore {
+    @apply m-4 ;
+}
+
+.logoStore a {
+    @apply m-4 grid justify-center;
+}
+
+.adresses {
+    @apply flex text-white justify-center
+    ;
+}
+
+.adresses ul {
+  @apply md:grid md:grid-cols-4 md:w-full;
+}
+
+.adresses li {
+    @apply m-2 p-2 md:justify-self-center ;
+}
+
+.adresses li h1 {
+    @apply font-medium;
+}
+
+.adresses li p {
+    @apply font-light;
+}
+
+.mentions {
+    @apply justify-center;
+}
+
+.mentions li {
+    @apply m-2 text-center;
+}

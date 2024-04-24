@@ -15,8 +15,11 @@ export default function Navbar() {
     return (
         <>
             <nav>
+
                 <div className="mx-auto px-4 sm:px-6 lg:px-8">
+
                     <div className="flex items-center justify-between h-16">
+
                         <div className="flex items-center">
 
                             <div className="navLogo">
@@ -78,10 +81,11 @@ export default function Navbar() {
                         </div>
 
                     </div>
+
                     {isClick && (
                         <div className="md:hidden">
-                            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                                <Link className="lien-mobile"
+                            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                                <Link className="lien-mobile "
                                       href="https://www.smartphone-id.com/photos-identite-en-ligne/"
                                       target="_blank">Photo d'identité en
                                     ligne</Link>
