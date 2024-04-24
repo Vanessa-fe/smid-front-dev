@@ -15,11 +15,11 @@ export default function Navbar() {
     return (
         <>
             <nav>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center">
 
-                            <div className="navLogo flex-shrink-0">
+                            <div className="navLogo">
                                 <Link href="/" aria-label="Page d'accueil du site">
                                     <Image
                                         src={Logo}
@@ -33,18 +33,24 @@ export default function Navbar() {
                         </div>
 
                         <div className="hidden md:block">
-                            <div className="flex items-center space-x-4">
-                                <Link className="p-2" href="https://www.smartphone-id.com/photos-identite-en-ligne/"
-                                      target="_blank">Home</Link>
+                            <div className="flex items-center">
+                                <Link className="p-2 m-0" href="https://www.smartphone-id.com/photos-identite-en-ligne/"
+                                      target="_blank">Permis de conduire</Link>
 
-                                <Link className="p-2" href="https://www.smartphone-id.com/photo-identite-bebe/"
-                                      target="_blank">Services</Link>
+                                <Link className="p-2 m-0" href="https://www.smartphone-id.com/photo-identite-bebe/"
+                                      target="_blank">Passeport</Link>
 
-                                <Link className="p-2" href="https://www.smartphone-id.com/e-photo-permis-conduire/"
-                                      target="_blank">About</Link>
+                                <Link className="p-2 m-0" href="https://www.smartphone-id.com/e-photo-permis-conduire/"
+                                      target="_blank m-0">Carte National d'identité</Link>
 
-                                <Link className="p-2" href="https://www.smartphone-id.com/code-ephoto-titre-de-sejour/"
-                                      target="_blank">Contact</Link>
+                                <Link className="p-2 m-0" href="https://www.smartphone-id.com/code-ephoto-titre-de-sejour/"
+                                      target="_blank">Titre de séjour</Link>
+
+                                <Link className="p-2 m-0" href="https://www.smartphone-id.com/code-ephoto-titre-de-sejour/"
+                                      target="_blank">Visa</Link>
+
+                                <Link className="p-2 m-0" href="https://www.smartphone-id.com/code-ephoto-titre-de-sejour/"
+                                      target="_blank">Carte vitale</Link>
                             </div>
                         </div>
 
