@@ -1,0 +1,207 @@
+[
+    {
+        "key": "group_662278102c5d9",
+        "title": "Page d'accueil - 1er bloc photo\/doc",
+        "fields": [
+            {
+                "key": "field_66227810b63e6",
+                "label": "H1",
+                "name": "h1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Titre",
+                "translations": "translate",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "acfe_field_group_condition": 0,
+                "show_in_graphql": 1,
+                "graphql_description": "",
+                "graphql_field_name": "h1",
+                "graphql_non_null": 0
+            },
+            {
+                "key": "field_66227999b63ea",
+                "label": "svg",
+                "name": "svg",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "minus-square-Bold"
+                },
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "return_format": "id",
+                "translations": "copy_once",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium",
+                "acfe_field_group_condition": 0,
+                "show_in_graphql": 1,
+                "graphql_description": "",
+                "graphql_field_name": "svg",
+                "library": "all"
+            },
+            {
+                "key": "field_66227949b63e7",
+                "label": "H4",
+                "name": "h4",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "translations": "translate",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "acfe_field_group_condition": 0,
+                "show_in_graphql": 1,
+                "graphql_description": "",
+                "graphql_field_name": "h4",
+                "graphql_non_null": 0
+            },
+            {
+                "key": "field_66227a0ab63eb",
+                "label": "svg (copier)",
+                "name": "svg_copier",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "minus-square-Bold"
+                },
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "return_format": "id",
+                "translations": "copy_once",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium",
+                "acfe_field_group_condition": 0,
+                "show_in_graphql": 1,
+                "graphql_description": "",
+                "graphql_field_name": "svg",
+                "library": "all"
+            },
+            {
+                "key": "field_66227989b63e9",
+                "label": "H4 (copier)",
+                "name": "h4_copier",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "translations": "translate",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "acfe_field_group_condition": 0,
+                "show_in_graphql": 1,
+                "graphql_description": "",
+                "graphql_field_name": "h4",
+                "graphql_non_null": 0
+            },
+            {
+                "key": "field_66227a1fb63ec",
+                "label": "paragraphe",
+                "name": "paragraphe",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "translations": "translate",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "acfe_field_group_condition": 0,
+                "show_in_graphql": 1,
+                "graphql_description": "",
+                "graphql_field_name": "paragraphe",
+                "graphql_non_null": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "acfe_autosync": [
+            "json"
+        ],
+        "acfe_form": 0,
+        "show_in_graphql": 1,
+        "graphql_field_name": "pageD'Accueil",
+        "map_graphql_types_from_location_rules": 1,
+        "graphql_types": [
+            "Page"
+        ],
+        "acfe_display_title": "",
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]

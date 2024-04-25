@@ -43,7 +43,7 @@ export default function footer() {
 
                         <div className="partie2 md:h-21">
 
-                            <div className="p2c1 md:">
+                            <div className="">
                                 <div className="bouttonPhoto md:my-2">
                                     <button>
                                         Faire la photo
