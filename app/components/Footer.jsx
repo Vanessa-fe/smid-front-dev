@@ -1,3 +1,5 @@
+'use client';
+
 import FooterLogo from "./Logo.svg";
 import AppStore from "./AppStore-vector.svg";
 import PlayStore from "./Gstore-vector.svg";
@@ -9,6 +11,8 @@ import Instagram from "./Icon_awesome-instagram.svg";
 import LinkedIn from "./Icon_awesome-linkedin-in.svg"
 import Link from "next/link";
 import Image from "next/image";
+//import {useRouter} from "next/navigation";
+//import LanguageSwitcher from "@/app/components/LanguageSwitcher_old";
 
 export default function footer() {
 
@@ -21,8 +25,7 @@ export default function footer() {
                     <div className="w-full">
 
                         <div className="partie1 md:w-full md:grid md:grid-cols-2">
-                            <div
-                                className="footerLogo items-center justify-center md:flex md:col-span-2">
+                            <div className="footerLogo items-center justify-center md:flex md:col-span-2">
                                 <Link className="grid md:grid p-2" href="/" aria-label="Page d'accueil du site">
                                     <Image
                                         className=""
@@ -35,15 +38,13 @@ export default function footer() {
                                 </Link>
                             </div>
                             <div className="menuLangue md:col-end-7 md:col-span-2 ">
-                                <button>
-                                    Choisir la langue
-                                </button>
+
                             </div>
                         </div>
 
                         <div className="partie2 md:h-21">
 
-                            <div className="p2c1 md:">
+                            <div className="">
                                 <div className="bouttonPhoto md:my-2">
                                     <button>
                                         Faire la photo

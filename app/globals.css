@@ -5,7 +5,7 @@
 /* base styles */
 body {
     background: #ebf0fa;
-    @apply text-gray-500;
+    @apply text-gray-500 mt-48;
 }
 
 /* Barre de navigation*/
@@ -54,7 +54,19 @@ nav {
     @apply my-4 text-sm leading-6;
 }
 
+/* pageDaccueil */
+
+.pageDaccueil {
+    @apply m-28;
+}
+
+
+
 /* FOOTER */
+
+footer {
+    @apply fixed z-0 bottom-0 w-full;
+}
 
 .footerLogo img{
     @apply justify-self-center ;
