@@ -11,11 +11,9 @@ import Instagram from "./Icon_awesome-instagram.svg";
 import LinkedIn from "./Icon_awesome-linkedin-in.svg"
 import Link from "next/link";
 import Image from "next/image";
-//import {useRouter} from "next/navigation";
-//import LanguageSwitcher from "@/app/components/LanguageSwitcher_old";
 
 export default function footer() {
-
+    // const LanguageSwitcher = ({ onChange })
     return (
         <>
             <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-neutral-900">
@@ -38,6 +36,11 @@ export default function footer() {
                                 </Link>
                             </div>
                             <div className="menuLangue md:col-end-7 md:col-span-2 ">
+                             {/*   <select onChange={onChange}>
+                                <option value="en">English</option>
+                                <option value="fr">Français</option>
+                                <option value="es">Español</option>
+                            </select>*/}
 
                             </div>
                         </div>

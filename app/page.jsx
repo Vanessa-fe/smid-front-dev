@@ -1,36 +1,38 @@
 import {Suspense} from "react";
 import Loading from "./loading";
+import getPages from "./lib/pageQueries";
 
 // test récupération données
-import React from 'react';
-
-
 // ---------- GET_PAGE ----------
-async function getPages() {
-    //console.log("getPages - Début de la fonction");
+/*async function getPages() {
+    console.log("getPages - Début de la fonction");
     const query = `{
-      pages (where: {language: FR}) {
-    nodes {
-      pageDAccueilBloc1 {
-        titre_bloc1
-        titre_h4_bloc1
-        repeteur_check_green_bloc1 {
-           check_green {
-           node {
-             sourceUrl(size: THUMBNAIL)
-              mediaItemUrl
+    pages{
+        edges {
+            node {
+                pageDAccueilBloc1 {
+                    titre_bloc1
+                    titre_h4_bloc1
+                    repeteur_check_green_bloc1 {
+                        check_green {
+                            node {
+                                mediaItemUrl
+                            }
+                        }
+                    }
+                }
+                slug
+                uri
+               language {
+                    code
+                    locale
+                }
             }
-          }
-          titre_h4_bloc1
         }
-      }
-      uri
     }
-  }
-    }`
-    ;
-    try {
-      //  console.log("URL appelée:", `${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`);
+}`;*/
+   /*try {
+          console.log("URL appelée:", `${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(query)}`);
 
         const res = await fetch(
             `${process.env.WORDPRESS_API_URL}?query=${encodeURIComponent(
@@ -45,24 +47,24 @@ async function getPages() {
                 cache: "no-store",
             }
         );
-        //console.log("Content-Type:", res.headers.get("Content-Type"));
-        //const jsonResponse = await res.json();
-        //console.log("Réponse JSON complète:", jsonResponse);
-        //console.log("Réponse brute:", res);
-        const {data} = await res.json();
+        console.log("Content-Type:", res.headers.get("Content-Type"));
+        const jsonResponse = await res.json();
+        console.log("Réponse JSON complète:", jsonResponse);
+        console.log("Réponse brute:", res);
+        const {data} = jsonResponse;
+        console.log("Données récupérées:", data);
         // Jusqu'ici tout va bien
-        //console.log("Données récupérées:", data);
-        return data.pages.nodes;
+        return data.pages.edges.node;
     } catch (error) {
-      //  console.error("Erreur lors de la récupération des pages:", error);
+          console.error("Erreur lors de la récupération des pages:", error);
     }
-}
+}*/
 
 // ---------- GET_PAGE ----------
 export default async function PageList() {
-    //console.log("PageList - Début de la fonction");
+    console.log("PageList - Début de la fonction");
     const pages = await getPages();
-   // console.log("Pages récupérées:", pages);
+    console.log("Pages récupérées:", pages);
     return (
         <Suspense fallback={<Loading/>}>
             <div>
@@ -77,11 +79,11 @@ export default async function PageList() {
                                 {page.pageDAccueilBloc1.repeteur_check_green_bloc1.map((item) => {
                                         try {
                                             //console.log("Check Green Data:", item.check_green);
-                                             //   console.log("Contenu de item.check_green:", item.check_green);
+                                            //   console.log("Contenu de item.check_green:", item.check_green);
                                             return (
 
                                                 <div className="repeteur_check_green_bloc1 bg-green-800 m-5 grid grid-cols-3 gap-2 items-center">
-                                                   {/* {Array.isArray(item.check_green) ? item.check_green.map((checkItem) => {
+                                                    {/* {Array.isArray(item.check_green) ? item.check_green.map((checkItem) => {
                                                         console.log("URL de l'image:", checkItem.node.mediaItemUrl);
                                                         return (*/}
                                                     <div className="bg-pink-400 content-center" key={item.check_green.node.mediaItemUrl}>
@@ -95,8 +97,8 @@ export default async function PageList() {
                                                 </div>
                                             );
                                         } catch (error) {
-                                          //  console.error("Erreur lors de la récupération des images:", error);
-                                           // console.log("Erreur détaillée:", error.message);
+                                            //  console.error("Erreur lors de la récupération des images:", error);
+                                            // console.log("Erreur détaillée:", error.message);
                                         }
                                     },
                                 )}

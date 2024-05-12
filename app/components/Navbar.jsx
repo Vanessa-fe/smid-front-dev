@@ -6,12 +6,15 @@ import Logo from "./logo-smartphone-id.jpg";
 import Hamburger from "./Hamburger.svg";
 import Croix from "./xmark-solid.svg";
 import {useState} from "react";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
     const [isClick, setisClick] = useState(false);
     const toggleNavbar = () => {
         setisClick(!isClick);
     };
+    const router = useRouter();
+
     return (
         <>
             <nav>
@@ -79,6 +82,7 @@ export default function Navbar() {
                             </button>
 
                         </div>
+
 
                     </div>
 
